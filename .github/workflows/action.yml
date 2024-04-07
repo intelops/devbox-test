@@ -14,8 +14,8 @@ jobs:
       - name: Run arbitrary commands
         run: devbox init
 
-      - name: Run arbitrary commands
-        run: devbox run -- echo "done!"
+      - name: kubectl version
+        run: devbox run -- kubectl version --client
 
-      - name: Run a script called test
-        run: devbox run test
+      - name: python version
+        run: python --version
