@@ -12,6 +12,9 @@ jobs:
         uses: jetpack-io/devbox-install-action@v0.8.0
 
       - name: Run arbitrary commands
+        run: devbox init
+
+      - name: Run arbitrary commands
         run: devbox run -- echo "done!"
 
       - name: Run a script called test
